@@ -1,17 +1,19 @@
-🧼 PowerShell Cleanup Script
-🎯 Description
+# 🧼 PowerShell Cleanup Script
+
+### 🎯 Description  
 This project automates a basic system cleanup using PowerShell. The script clears user temporary files, the Windows update cache, and empties the Recycle Bin. It simulates common Tier 1/Tier 2 maintenance tasks used to resolve slow performance and free up disk space.
 
 This was built and tested in a Windows 10 virtual machine as part of my hands-on IT home lab environment.
 
-🛠 Tools Used
-PowerShell
+---
 
-VirtualBox (Windows 10 VM)
+### 🛠 Tools Used  
+- PowerShell  
+- VirtualBox (Windows 10 VM)  
+- `$env:TEMP`, `Remove-Item`, `Clear-RecycleBin`
 
-$env:TEMP, Remove-Item, Clear-RecycleBin
 
-📋 What the Script Does (Line-by-Line Breakdown)
+### 📋 What the Script Does (Line-by-Line Breakdown)
 Write-Output "Starting system cleanup..."
 ➡️ Displays a message indicating that the script has started.
 
@@ -27,7 +29,7 @@ Clear-RecycleBin -Force -ErrorAction SilentlyContinue
 Write-Output "Cleanup complete!"
 ✅ Confirms that the script has finished running successfully.
 
-🧠 Key Learnings
+### 🧠 Key Learnings
 Wrote and executed a .ps1 PowerShell script for routine system maintenance
 
 Practiced adjusting PowerShell’s execution policy to allow script running
@@ -38,7 +40,7 @@ Gained awareness of system folders that store unnecessary cached data
 
 Simulated a lightweight IT automation workflow for Tier 1/Tier 2 support
 
-🔐 How to Run This Script
+### 🔐 How to Run This Script
 Run PowerShell as Administrator
 
 Allow script execution:
@@ -55,10 +57,10 @@ Starting system cleanup...
 Cleanup complete!
 
 
-✅ Outcome
+### ✅ Outcome
 Successfully created and ran a PowerShell script to perform basic cleanup and maintenance tasks. This project simulates real-world responsibilities in entry-level IT roles and forms the foundation for future automation scripting.
 
-🔗 Related Skills
+##🔗 Related Skills
 PowerShell Scripting
 
 Windows OS Maintenance
